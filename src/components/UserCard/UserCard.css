@@ -1,0 +1,38 @@
+.card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: auto;
+  height: 18rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.card-text {
+  display: inline-block;
+}
+
+.card-text > h3 {
+  font-size: 18px;
+  margin: auto;
+}
+
+.card-text > p {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(175, 165, 165);
+  font-style: italic;
+}
+

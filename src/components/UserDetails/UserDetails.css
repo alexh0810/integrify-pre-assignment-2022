@@ -1,0 +1,30 @@
+.detail-container {
+
+    box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: left;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 300px;
+	width: 300px;
+    
+}
+
+.detail-card {
+    padding: 25px;
+}
+
+.detail-card > ul > li {
+    list-style-type: "-  "; 
+}
+
+.address-list > ul > li {
+    list-style-type: disc;
+}
+
+.address-list > ul {
+    padding: 0 0 0 20px;
+}
+
+
