@@ -4,7 +4,7 @@
 
 A user profiles list application built as a pre-assignment for Integrify Academy Software Engineering program. 
 
-Give it a try here: 
+Give it a try here: https://integrify-user-list.netlify.app/
 
 <br/>
 
