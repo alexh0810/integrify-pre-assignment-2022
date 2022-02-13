@@ -3,27 +3,27 @@ import './UserDetails.css'
 
 
 
-const UserDetails = (props) => {
+const UserDetails = ({userDetail}) => {
 
-    const userDetail = props.userDetail;
+    const {name, username, email, phone, website, company, address} = userDetail;
 
     return (
         <div className='detail-container'>
         <div className='detail-card'>
          <ul>
-             <li>Name: {userDetail.name}</li>
-             <li>Username: {userDetail.username}</li>
-             <li>Email: {userDetail.email}</li>
-             <li>Phone: {userDetail.phone}</li>
-             <li>Website: {userDetail.website}</li>
-             {userDetail.company && <li>Company: {userDetail.company.name}</li>}
-             {userDetail.address && (<li>Address:
+             <li>Name: {name}</li>
+             <li>Username: {username}</li>
+             <li>Email: {email}</li>
+             <li>Phone: {phone}</li>
+             <li>Website: {website}</li>
+             {company && <li>Company: {company.name}</li>}
+             {address && (<li>Address:
                  <div className='address-list'>
                 <ul>
-                    <li>Street: {userDetail.address.street}</li>
-                    <li>Suite: {userDetail.address.suite}</li>
-                    <li>City: {userDetail.address.city}</li>
-                    <li>Zipcode: {userDetail.address.zipcode}</li>
+                    <li>Street: {address.street}</li>
+                    <li>Suite: {address.suite}</li>
+                    <li>City: {address.city}</li>
+                    <li>Zipcode: {address.zipcode}</li>
                 </ul>
                 </div>
              </li>

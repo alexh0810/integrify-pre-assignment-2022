@@ -5,8 +5,8 @@ import './UserCard.css'
 
 
 
-const UserCard = (props) => { 
-    const {id, name, username, website} = props.userInfo; 
+const UserCard = ({userInfo}) => { 
+    const {id, name, username, website} = userInfo;  
    
     return (
         <div className='card'>
