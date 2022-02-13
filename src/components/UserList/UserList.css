@@ -1,9 +1,8 @@
 .home-container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-gap: 50px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
-
+    justify-content: center;
+    max-width: 1400px;
+    margin: 20px;
 }

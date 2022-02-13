@@ -1,22 +1,11 @@
-import React, {useEffect, useState} from 'react';
-import { useParams } from 'react-router-dom';
-import { makeStyles } from '@mui/styles';
+import React from 'react';
 import './UserDetails.css'
 
 
 
-const UserDetails = () => {
-    let { userId } = useParams(); 
-    const [userDetail, setUserDetail] = useState({});
-    const fetchUserDetail = () => {
-        fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
-        .then((response) => response.json())
-        .then((data) => setUserDetail(data))
-        .catch((err) => console.log(err));
-    }
+const UserDetails = (props) => {
 
-    useEffect(() => fetchUserDetail(), [userDetail.id]);
-    console.log(userDetail);
+    const userDetail = props.userDetail;
 
     return (
         <div className='detail-container'>

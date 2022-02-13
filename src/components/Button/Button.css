@@ -1,6 +1,7 @@
 
 .btn-container {
     padding: 20px;
+    margin: 16px;
 }
 
 .btn {
@@ -12,6 +13,7 @@
     text-align: center;
     color: white;
     text-decoration: none;
-    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+    box-shadow: none;
+    outline: none;
 }
 
